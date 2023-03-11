@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+</head>
+<body>
+    <h1>Seja bem vindo ao DRIKA LANCHES</h1>
+    <H1>Escolha seu lanche</H1>
+    <h1>Descrição do lanche escolhido.</h1>
+    <p id="lanche"></p>
+    <p id="desc"></p>
+
+
+    <script>
+let escolha =  Number(prompt("Qual lanche vc dejesa saber a descrição?\n1-X- Burguer \n2- X- Salada \n3- Lanchinho"));
+let descricao;
+let lanche; 
+
+switch (escolha) {
+    case 1:
+    descricao = "Descrição: Hambuerguer, alface e tomate";
+    lanche = "X Burguer";
+     break;
+    case 2:
+        descricao = "Descrição: bife de frango, cebola e molho especial";
+        lanche = "X- Salada"
+    case 3:
+        descricao = "Descrição: pão integral, queijo prato e alface americano";
+        lanche = "Lanchinho"
+     break;
+   default:     
+    lanche = "!Opção invalida"    
+   descricao = "Opção invalida"
+     break;    
+}
+document.getElementById("lanche").innerHTML = descricao;
+document.getElementById("desc").innerHTML = lanche;
+    </script>
+</body>
+</html>
